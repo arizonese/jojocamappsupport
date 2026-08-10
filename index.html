@@ -3,87 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JoJo Cam - P2P Camera Application</title>
+    
+    <!-- SEO Title & Meta Tags -->
+    <title>JoJo Cam - Private P2P Baby Monitor & Nursery Cam App</title>
+    <meta name="description" content="Turn your spare phone into a private, zero-cloud video baby monitor. Free up your time to work or rest in another room with 100% P2P local Wi-Fi encryption and $0 hardware cost.">
+    <meta name="keywords" content="baby monitor app, p2p baby cam, turn old phone into cctv, private nursery camera, wfh baby monitor, zero cloud video stream">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="JoJo Cam - Private P2P Baby Monitor App">
+    <meta property="og:description" content="Watch over your baby with complete peace of mind. Turn spare phones into private video baby monitors over local Wi-Fi.">
+    <meta property="og:image" content="assets/app_artwork.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jojoapp.wavepixs.com/">
+
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "JoJo Cam",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "UtilitiesApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Private, peer-to-peer video baby monitor application that converts spare mobile devices into dedicated nursery cameras."
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="main-nav">
         <div class="nav-container">
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/app_icon.png" alt="JoJo Cam" class="logo-icon">
+                    <img src="assets/app_icon.png" alt="JoJo Cam App Icon" class="logo-icon">
                     <span class="logo-text">JoJo Cam</span>
+                    <span class="logo-badge">Baby Cam</span>
                 </a>
             </div>
             <ul class="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="support.html">Support</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
             </ul>
+            <a href="#download" class="nav-cta">Download App</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <header class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>JoJo Cam</h1>
-                <p class="hero-subtitle">Direct P2P Camera Connection</p>
-                <p class="hero-description">Secure, direct peer-to-peer camera communication. No servers, no cloud storage, just pure connection.</p>
+                <div class="pill-badge">
+                    <span class="pill-dot"></span>
+                    <span>100% Private • Zero Cloud • Local P2P</span>
+                </div>
+                <h1>Watch Over Your Baby With <span>Complete Peace of Mind</span></h1>
+                <p class="hero-description">
+                    Effortlessly transform any spare phone or tablet into a private, dedicated video baby monitor. Work, cook, or relax in another room while staying connected to your little one.
+                </p>
+                
+                <div class="hero-trust-badges">
+                    <div class="trust-item"><span class="trust-icon">✓</span> $0 Hardware Cost</div>
+                    <div class="trust-item"><span class="trust-icon">✓</span> Zero Data Consumption</div>
+                    <div class="trust-item"><span class="trust-icon">✓</span> AES-256 Encrypted</div>
+                    <div class="trust-item"><span class="trust-icon">✓</span> No Registration</div>
+                </div>
+
                 <div class="hero-buttons">
-                    <a href="#features" class="btn btn-primary">Explore Features</a>
-                    <a href="support.html" class="btn btn-secondary">Get Support</a>
+                    <a href="#download" class="btn btn-primary">
+                        <span>👶 Download Free Baby Cam</span>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary">
+                        <span>See How It Works</span>
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/app_artwork.png" alt="JoJo Cam App" class="hero-icon">
+
+            <div class="hero-image-wrapper">
+                <div class="hero-artwork-frame">
+                    <img src="assets/app_artwork.png" alt="JoJo Cam Baby Monitor Preview" class="hero-icon">
+                </div>
+                <!-- Floating Decorative Badges -->
+                <div class="floating-card floating-card-top">
+                    <span class="fc-icon">🔒</span>
+                    <div class="fc-text">
+                        <span class="fc-title">Zero Cloud Servers</span>
+                        <span class="fc-subtitle">Video stays on your Wi-Fi</span>
+                    </div>
+                </div>
+                <div class="floating-card floating-card-bottom">
+                    <span class="fc-icon">👶</span>
+                    <div class="fc-text">
+                        <span class="fc-title">Live Nursery Feed</span>
+                        <span class="fc-subtitle">Low-latency P2P stream</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </header>
 
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2>Why JoJo Cam?</h2>
+            <div class="section-header">
+                <span class="section-tag">Designed For Parents & Caregivers</span>
+                <h2>Why WFH Parents Love JoJo Cam</h2>
+                <p>Everything you need to keep a watchful eye on your baby, built with privacy and simplicity at its core.</p>
+            </div>
+
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Privacy First</h3>
-                    <p>No account required. No personal data collection. Your camera feed stays private.</p>
+                    <div class="feature-icon-wrapper">💻</div>
+                    <h3>Work Freely in Another Room</h3>
+                    <p>Attend Zoom calls or handle chores while keeping a continuous live window on your baby sleeping or playing in their crib.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Direct Connection</h3>
-                    <p>P2P technology means devices connect directly. Lightning-fast with minimal latency.</p>
+                    <div class="feature-icon-wrapper">🔒</div>
+                    <h3>100% Private (No Cloud)</h3>
+                    <p>Unlike cloud cameras that upload streams to third-party servers, JoJo Cam streams strictly peer-to-peer over your local home Wi-Fi.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">🛡️</div>
-                    <h3>Secure</h3>
-                    <p>End-to-end encrypted communication. No intermediaries, no servers watching.</p>
+                    <div class="feature-icon-wrapper">📱</div>
+                    <h3>Repurpose Old Spare Phones</h3>
+                    <p>Don't spend $100–$300 on specialized hardware. Turn any unused iPhone, iPad, or Android phone into a dedicated nursery camera.</p>
                 </div>
+
                 <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Cross-Platform</h3>
-                    <p>Available on iOS and Android. Connect your devices seamlessly.</p>
+                    <div class="feature-icon-wrapper">⚡</div>
+                    <h3>Instant QR Code Pairing</h3>
+                    <p>No account creation, no password setup, and no email verification required. Just scan a QR code and start streaming in seconds.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">🔍</div>
+                    <h3>Remote Camera Controls</h3>
+                    <p>Zoom in remotely to check if your baby's eyes are open, toggle the flashlight gently, or switch front/rear cameras from your phone.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon-wrapper">📶</div>
+                    <h3>Zero Internet Data Cost</h3>
+                    <p>Streams entirely within your local Wi-Fi network (LAN), using 0MB of your cellular data or home internet plan bandwidth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Simple 3-Step Setup</span>
+                <h2>Ready in Under 30 Seconds</h2>
+                <p>No complex network configuration or router port-forwarding needed.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📱</div>
+                    <h3>Place Spare Phone in Nursery</h3>
+                    <p>Mount or stand your old phone near your baby's crib or playpen, connected to home Wi-Fi.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">📷</div>
+                    <h3>Scan QR Code to Pair</h3>
+                    <p>Open JoJo Cam on your main phone and scan the setup QR code displayed on the nursery phone.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">👶</div>
+                    <h3>Monitor & Work Freely</h3>
+                    <p>Enjoy a continuous, encrypted live feed with remote zoom and audio while working in another room.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Banner Section -->
+    <section class="privacy-banner">
+        <div class="container">
+            <div class="privacy-banner-box">
+                <div class="privacy-banner-text">
+                    <h2>Your Baby's Privacy Comes First</h2>
+                    <p>Commercial Wi-Fi cameras are frequently targeted by cloud leaks and server hacks. JoJo Cam eliminates the cloud entirely to guarantee absolute privacy.</p>
+                    <ul class="privacy-features-list">
+                        <li><span class="pf-icon">✓</span> Direct AES-256-GCM End-to-End Encryption</li>
+                        <li><span class="pf-icon">✓</span> Video feeds NEVER touch external servers</li>
+                        <li><span class="pf-icon">✓</span> Zero user data collection or tracking</li>
+                    </ul>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 90px; margin-bottom: 10px;">🛡️</div>
+                    <div style="font-weight: 700; font-size: 18px; color: #a5b4fc;">Pure Local Peer-to-Peer</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Got Questions?</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">❓ Do I need to buy extra hardware or camera lenses?</div>
+                    <div class="faq-answer">No! JoJo Cam uses the high-quality camera already built into your spare smartphone or tablet.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">❓ Does JoJo Cam work if the internet goes down?</div>
+                    <div class="faq-answer">Yes! As long as both devices are connected to the same local Wi-Fi router, JoJo Cam streams peer-to-peer even if your internet connection is offline.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">❓ Is my baby video feed safe from hackers?</div>
+                    <div class="faq-answer">100% yes. Because there are no cloud servers storing or relaying your stream, outside hackers cannot access your feed. Encryption keys are generated locally between your paired phones.</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">❓ Can I control the camera remotely?</div>
+                    <div class="faq-answer">Yes! From your viewer phone, you can remotely zoom in/out, turn on the flashlight gently, and switch between front and back cameras.</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Download Section -->
-    <section class="download">
+    <section id="download" class="download-cta">
         <div class="container">
-            <h2>Download JoJo Cam</h2>
-            <p>Get started in seconds. Available on both iOS and Android.</p>
-            <div class="download-buttons">
-                <a href="https://apps.apple.com/id/app/jojo-cam/id6768070630" class="btn btn-large">
-                    📱 Download on App Store
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.wavepixs.p2pcamera" class="btn btn-large">
-                    🤖 Get it on Google Play
-                </a>
+            <div class="cta-box">
+                <h2>Turn Your Spare Phone into a Baby Cam Today</h2>
+                <p>Free yourself to work and relax while staying connected to your baby. Available on iOS and Android.</p>
+                
+                <div class="store-buttons-flex">
+                    <a href="https://apps.apple.com/id/app/jojo-cam/id6768070630" class="btn-store" target="_blank" rel="noopener">
+                        <span class="store-icon"></span>
+                        <div class="store-text">
+                            <span class="store-subtitle">Download on the</span>
+                            <span class="store-title">App Store</span>
+                        </div>
+                    </a>
+
+                    <a href="https://play.google.com/store/apps/details?id=com.wavepixs.p2pcamera" class="btn-store" target="_blank" rel="noopener">
+                        <span class="store-icon">🤖</span>
+                        <div class="store-text">
+                            <span class="store-subtitle">Get it on</span>
+                            <span class="store-title">Google Play</span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -94,27 +282,27 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>JoJo Cam</h4>
-                    <p>Direct P2P camera connection for modern devices.</p>
+                    <p>Private, peer-to-peer video baby monitor application for modern families.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Links</h4>
+                    <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="support.html">Support</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Support</h4>
+                    <h4>Support & Privacy</h4>
                     <ul>
-                        <li><a href="support.html">Contact Us</a></li>
+                        <li><a href="support.html">Contact Support</a></li>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 JoJo Cam. All rights reserved.</p>
+                <p>&copy; 2026 JoJo Cam. Built with privacy in mind. All rights reserved.</p>
             </div>
         </div>
     </footer>
